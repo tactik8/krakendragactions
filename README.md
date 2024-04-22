@@ -4,7 +4,7 @@ Library to facilitate drag and drops
 ## How to use
 
 ```
-import { krDragActions } from '...'
+import { krDragActions } from 'https://tactik8.github.io/krakendragactions/kraken_drag_actions/kraken_drag_actions.js'
 
 
 function callbackFn(event){
