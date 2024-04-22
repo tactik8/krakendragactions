@@ -12,6 +12,7 @@ function callbackFn(event){
 }
 
 
+
 // Set drop zone
 let test1 = document.getElementById('test1')
 krDragActions.dragCopy.setDropzone(test1, callbackFn)
