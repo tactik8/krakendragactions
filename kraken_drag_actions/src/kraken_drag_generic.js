@@ -99,3 +99,28 @@ function getActionRecord(actionID, draggedElement, dropzoneElement, resultElemen
     }
     return record
 }
+
+
+
+
+function setPosition(element, x, y) {
+
+    let snapX = 50
+    let snapY = 50
+
+    var elementRect = element.getBoundingClientRect();
+
+    let adjX = Number(x) - ((elementRect.right - elementRect.left) / 2)
+    let adjY = Number(y) - ((elementRect.bottom - elementRect.top) / 2)
+
+    adjX =Math.ceil(adjX / snapX) * snapX; 
+
+    adjY =Math.ceil(adjY / snapY) * snapY; 
+
+
+    element.style.position = "absolute"
+    element.style.left = String(adjX) + 'px'
+    element.style.top = String(adjY) + 'px'
+
+
+}
