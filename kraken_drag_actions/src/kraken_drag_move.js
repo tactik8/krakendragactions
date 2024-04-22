@@ -36,8 +36,7 @@ function setListenerDropzoneDragAndMove(element, callbackFn) {
         
         setPosition(dragged, event.clientX, event.clientY)
 
-        
-
+    
         // Callback to callbackFn if provided with action record
         var actionRecord = getActionRecord('krDragMove')
         if (callbackFn){
